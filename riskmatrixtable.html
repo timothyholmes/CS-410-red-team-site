@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Risk Matrix
+	</title>
+
+<link href="./style/visual.css" rel="stylesheet" type="text/css">
+<link href="./style/responsive-nav.css" rel="stylesheet" type="text/css">
+<link href="./style/tabcontent.css" rel="stylesheet" type="text/css" />
+<link href="./style/matrix.css" rel="stylesheet" type="text/css" />
+<script src="./scripts/responsive-nav.js"></script>
+<script src="./scripts/tabcontent.js" type="text/javascript"></script>
+
+</head>
+<body id="bodyWrap">
+<header>
+		<nav class="nav-collapse">
+  			<ul>
+    			<li><a href="./index.html">Home</a></li>
+    			<li><a href="./team.html">Team</a></li>
+    			<li><a href="./problem.html">Problem</a></li>
+    			<li><a href="./solution.html">Solution</a></li>
+    			<li><a href="./resources.html">Resources</a></li>
+				<li><a href="./riskmatrixtable.html">Risk Matrix</a></li>
+				<li><a href="./stories.html">User Stories</a></li>
+  			</ul>
+		</nav>
+	</header>
+<style type="text/css">
+.ritz .waffle .s2{text-align:left;color:#000000;background-color:#ff0000;font-size:20pt;vertical-align:bottom;white-space:normal;overflow:hidden;direction:ltr;padding:2px 3px 2px 3px;width:21%}.ritz .waffle .s0{text-align:left;color:#000000;background-color:#ffffff;font-size:20pt;vertical-align:bottom;white-space:normal;overflow:hidden;direction:ltr;padding:2px 3px 2px 3px}.ritz .waffle .s3{text-align:left;color:#000000;background-color:#00ff00;font-size:20pt;vertical-align:bottom;white-space:normal;overflow:hidden;direction:ltr;padding:2px 3px 2px 3px;width:21%}.ritz .waffle .s1{text-align:left;color:#000000;background-color:#ffff00;font-size:20pt;vertical-align:bottom;white-space:normal;overflow:hidden;direction:ltr;padding:2px 3px 2px 3px;width:21%}
+</style>
+<body id="bodyWrap">
+<div id="contentWrap">
+<div id="headerBackgroundWrap">
+		<div id ="headerBackgroundImage">
+			<div class="centeredText">
+				<h1>Risk Matrix</h1>
+			</div>
+		</div>
+	</div>
+<div class="ritz grid-container" dir="ltr">
+<table class="waffle" cellspacing="1" cellpadding="0">
+<tbody><tr style='height:20px;'>
+<td class="s0" dir="ltr">Certain</td>
+<td class="s1" dir="ltr"></td>
+<td class="s2" dir="ltr"></td>
+<td class="s2" dir="ltr"></td>
+<td class="s2" dir="ltr"></td>
+</tr><tr style='height:20px;'>
+<td class="s0" dir="ltr">Likely</td>
+<td class="s1" dir="ltr"></td>
+<td class="s1" dir="ltr">C3</td>
+<td class="s2" dir="ltr"></td>
+<td class="s2" dir="ltr"></td>
+</tr><tr style='height:20px;'>
+<td class="s0" dir="ltr">Possible</td>
+<td class="s3" dir="ltr"></td>
+<td class="s1" dir="ltr">T1</td>
+<td class="s1" dir="ltr">T3, C4</td>
+<td class="s2" dir="ltr">T2, C1, C2</td>
+</tr><tr style='height:20px;'>
+<td class="s0" dir="ltr">Unlikely</td>
+<td class="s3"></td><td class="s3">
+</td><td class="s1"></td>
+<td class="s1">S1</td></tr>
+<tr style='height:20px;'>
+<td class="s0" dir="ltr">Rare</td>
+<td class="s3"></td><td class="s3">
+</td><td class="s3"></td><td class="s1">
+</td></tr><tr style='height:20px;'>
+<td class="s0"></td>
+<td class="s0" dir="ltr">Negligible</td>
+<td class="s0" dir="ltr">Marginal</td>
+<td class="s0" dir="ltr">Major</td>
+<td class="s0" dir="ltr">Critical</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+</div>
+<div id="contentWrap">
+		<h2>Technical Risks</h2>
+		<br style="line-height:10px" /> 
+		<ul>
+			<h2><li>Domain Experience T1</h2></li>
+			<ul>
+			<p><li>Due to the limited Domain experience of the team the learning curve of how to properly express a solution within the domain will be high</li></p>
+				<li>Impact 2 Probability 3</li>
+				<li>Mitigation: Agile development is being employed to allow the developers help word this</li>
+			</ul>
+			<p>Java Compatibility T2: Java 8 has not been adopted by the majority of Java users</p>
+			<ul>
+				<li>Impact 4 Probability 3</li>
+				<li>Mitigation: None</li>
+			</ul>
+			<p>New Framework Technology, JavaFX T3: JavaFX, Oracle’s proposed replacement for SWING, is still a fairly new user interface framework</p>
+			<ul>
+				<li>Impact 3 Probability 3</li>
+				<li>Mitigation:  Even though the API is newer there are numerous resources to use for reference. It also provides powerful tools that once understood will overcome all shortcomings</li>
+			</ul>
+		</ul>
+		<br style="line-height:10px" /> 
+		<h2>Customer Risks</h2>
+		<br style="line-height:10px" /> 
+		<ul>
+			<h2><li>Acceptable Solution C1</h2></li>
+			<ul>
+			<p><li><ul>Due to the high level of user technical experience the delivered product may fall short of expectation</p></li></ul>
+			
+				<li>Impact 4 Probability 3</li>
+				<li>Mitigation: Rigours Validation and Verification from targeted customer base</li>
+			</ul>
+		</ul>
+		<h2>Schedule Risks</h2>
+		<ul>
+		<li>S1 - Development team unable to meet deadline. <br/>Mitigation Nobody graduating before deadline. One member with extensive Java experience will have a light class load (only 411) in second half of development.</li>
+		</ul>
+
+		</div>
+<script>
+  		var nav = responsiveNav(".nav-collapse");
+	</script>
+</body>
+</body>
+</html>

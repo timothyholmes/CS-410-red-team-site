@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		CS 410 Red Team
+	</title>
+
+<link href="visual.css" rel="stylesheet" type="text/css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+<style>
+/* John Berlin CSS for Competition Matrix */
+.CompetitionMatrix {
+	margin:0px;padding:0px;
+	width:100%;
+	box-shadow: 10px 10px 5px #888888;
+	border:1px solid #000000;
+	
+	-moz-border-radius-bottomleft:9px;
+	-webkit-border-bottom-left-radius:9px;
+	border-bottom-left-radius:9px;
+	
+	-moz-border-radius-bottomright:9px;
+	-webkit-border-bottom-right-radius:9px;
+	border-bottom-right-radius:9px;
+	
+	-moz-border-radius-topright:9px;
+	-webkit-border-top-right-radius:9px;
+	border-top-right-radius:9px;
+	
+	-moz-border-radius-topleft:9px;
+	-webkit-border-top-left-radius:9px;
+	border-top-left-radius:9px;
+}.CompetitionMatrix table{
+    border-collapse: collapse;
+        border-spacing: 0;
+	width:100%;
+	height:100%;
+	margin:0px;padding:0px;
+}.CompetitionMatrix tr:last-child td:last-child {
+	-moz-border-radius-bottomright:9px;
+	-webkit-border-bottom-right-radius:9px;
+	border-bottom-right-radius:9px;
+}
+.CompetitionMatrix table tr:first-child td:first-child {
+	-moz-border-radius-topleft:9px;
+	-webkit-border-top-left-radius:9px;
+	border-top-left-radius:9px;
+}
+.CompetitionMatrix table tr:first-child td:last-child {
+	-moz-border-radius-topright:9px;
+	-webkit-border-top-right-radius:9px;
+	border-top-right-radius:9px;
+}.CompetitionMatrix tr:last-child td:first-child{
+	-moz-border-radius-bottomleft:9px;
+	-webkit-border-bottom-left-radius:9px;
+	border-bottom-left-radius:9px;
+}.CompetitionMatrix tr:hover td{
+	
+}
+.CompetitionMatrix tr:nth-child(odd){ background-color:#ffffff; }
+.CompetitionMatrix tr:nth-child(even)    { background-color:#ffffff; }.CompetitionMatrix td{
+	vertical-align:middle;
+	border:1px solid #000000;
+	border-width:0px 1px 1px 0px;
+	text-align:left;
+	padding:16px;
+	font-size:16px;
+	font-family:Arial;
+	font-weight:normal;
+	color:#000000;
+}.CompetitionMatrix tr:last-child td{
+	border-width:0px 1px 0px 0px;
+}.CompetitionMatrix tr td:last-child{
+	border-width:0px 0px 1px 0px;
+}.CompetitionMatrix tr:last-child td:last-child{
+	border-width:0px 0px 0px 0px;
+}
+.CompetitionMatrix tr:first-child td{
+		background:-o-linear-gradient(bottom, #820000 5%, #820101 100%);	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #820000), color-stop(1, #820101) );
+	background:-moz-linear-gradient( center top, #820000 5%, #820101 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#820000", endColorstr="#820101");	background: -o-linear-gradient(top,#820000,820101);
+
+	background-color:#820000;
+	border:0px solid #000000;
+	text-align:center;
+	border-width:0px 0px 1px 1px;
+	font-size:18px;
+	font-family:Arial;
+	font-weight:bold;
+	color:#191919;
+}
+.CompetitionMatrix tr:first-child:hover td{
+	background:-o-linear-gradient(bottom, #820000 5%, #820101 100%);	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #820000), color-stop(1, #820101) );
+	background:-moz-linear-gradient( center top, #820000 5%, #820101 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#820000", endColorstr="#820101");	background: -o-linear-gradient(top,#820000,820101);
+
+	background-color:#820000;
+}
+.CompetitionMatrix tr:first-child td:first-child{
+	border-width:0px 0px 1px 0px;
+}
+.CompetitionMatrix tr:first-child td:last-child{
+	border-width:0px 0px 1px 1px;
+}
+</style>
+</head>
+<body id="bodyWrap">
+
+	<header>
+		<div id="navbarWrap">
+			<nav id="nav">
+        		<ul>
+          			<li class=""><a href="./index.html">Home</a></li>
+          			<li class=""><a href="./bio.html">Bio</a></li>
+          			<li class=""><a href="./problem.html">Problem</a></li>
+					<li class=""><a href="./solution.html">Solution</a></li>
+          			<li class=""><a href="./references.html">References</a></li>
+					<li class=""><a href="./glossary.html">Glossary</a></li>
+					
+					<li class="active"><a href="./matrix.html">Competition Matrix</a></li>
+					<li><a href="./riskmatrixtable.html">Risk Matrix</a></li>
+        		</ul>
+    		</nav> 
+		</div>
+	</header>
+	<br><br>
+	<div id="contentWrap">
+	<br><br>
+		<div class="CompetitionMatrix">
+			 <table>
+				 <tr>
+					<td>Features for CARP Viewing</td>
+					<td>Geneious</td>
+					<td>CLC</td>
+					<td>Lasergene</td>
+					<td>Vector NTI</td>
+					<td>Sequenche</td>
+					<td>CARP Viewer</td>
+				 </tr>
+				 <tr>
+					<td>Layout CARP produced genomic sequence in a circle</td>
+					<td>No</td>
+					<td>No</td>
+					<td>No</td>
+					<td>No</td>
+					<td>No</td>
+					<td>Yes</td>
+				 </tr>
+				 <tr>
+					<td>View reasons behind fragment join</td>
+					<td>No</td>
+					<td>No</td>
+					<td>No</td>
+					<td>No</td>
+					<td>No</td>
+					<td>Yes</td>
+				 </tr>
+				  <tr>
+					<td>Allow for fragment rearrangement</td>
+					<td>No</td>
+					<td>No</td>
+					<td>No</td>
+					<td>No</td>
+					<td>No</td>
+					<td>Yes</td>
+				 </tr>
+				  <tr>
+					<td>Export CARP file to GenBank</td>
+					<td>No</td>
+					<td>No</td>
+					<td>No</td>
+					<td>No</td>
+					<td>No</td>
+					<td>Yes</td>
+				 </tr>
+				  <tr>
+					<td>Assist in creating correct PCR primer information for a join</td>
+					<td>No</td>
+					<td>No</td>
+					<td>No</td>
+					<td>No</td>
+					<td>No</td>
+					<td>*</td>
+				 </tr>
+			 </table>
+		</div>
+		<br><br>
+		<p>*Possible feature for future implementation, but not currently a primary function</p>
+	</div>
+</body>
+</html>

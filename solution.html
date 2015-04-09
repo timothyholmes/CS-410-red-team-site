@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Solution
+	</title>
+
+<link href="./style/visual.css" rel="stylesheet" type="text/css">
+<link href="./style/responsive-nav.css" rel="stylesheet" type="text/css">
+<link href="./style/tabcontent.css" rel="stylesheet" type="text/css" />
+<link href="./style/matrix.css" rel="stylesheet" type="text/css" />
+<script src="./scripts/responsive-nav.js"></script>
+<script src="./scripts/tabcontent.js" type="text/javascript"></script>
+
+</head>
+<body id="bodyWrap">
+
+	<header>
+		<nav class="nav-collapse">
+  			<ul>
+    			<li><a href="./index.html">Home</a></li>
+    			<li><a href="./team.html">Team</a></li>
+    			<li><a href="./problem.html">Problem</a></li>
+    			<li><a href="./solution.html">Solution</a></li>
+    			<li><a href="./resources.html">Resources</a></li>
+				<li><a href="./riskmatrixtable.html">Risk Matrix</a></li>
+				<li><a href="./stories.html">User Stories</a></li>
+  			</ul>
+		</nav>
+	</header>
+	
+	<div id="headerBackgroundWrap">
+		<div id ="headerBackgroundImage">
+			<div class="centeredText">
+				<h1>Solution</h1>
+			</div>
+		</div>
+	</div>
+
+	<div id="contentWrap">
+	
+		<h2>Solution Statement:</h2>
+		The software developed by the Red Team will display a genome sequence, and show the justification used for the sequence fragments.
+	
+		<br><br><br>
+	
+		<h2>Solution Characteristics:</h2><br>
+		<ul>
+			<li>Java based Genome Viewer</li>
+			<li>User friendly UI</li>
+			<li>Displays genomic sequence with unverified join in a circle</li>
+			<li>At each join, option for user to display the reasoning behind join</li>
+			<li>Be open source</li>
+			<li>Export file with non-standard annotations to GenBank format</li>
+		</ul>
+	
+	<br><br>
+	
+	<h2>Competition Matrix:</h2><br>
+	<div class="CompetitionMatrix">
+			 <table>
+				 <tr>
+					<td>Features for Unverified Join Viewing</td>
+					<td>Geneious</td>
+					<td>CLC</td>
+					<td>Lasergene</td>
+					<td>Vector NTI</td>
+					<td>Sequenche</td>
+					<td>Unverified Join Viewer</td>
+				 </tr>
+				 <tr>
+					<td>Layout genomic sequence with unverified join in a circle</td>
+					<td>No</td>
+					<td>No</td>
+					<td>No</td>
+					<td>No</td>
+					<td>No</td>
+					<td>Yes</td>
+				 </tr>
+				 <tr>
+					<td>View reasons behind fragment join</td>
+					<td>No</td>
+					<td>No</td>
+					<td>No</td>
+					<td>No</td>
+					<td>No</td>
+					<td>Yes</td>
+				 </tr>
+				  <tr>
+					<td>Allow for fragment rearrangement</td>
+					<td>No</td>
+					<td>No</td>
+					<td>No</td>
+					<td>No</td>
+					<td>No</td>
+					<td>Yes</td>
+				 </tr>
+				  <tr>
+					<td>Export file with non-standard annotations to GenBank format</td>
+					<td>No</td>
+					<td>No</td>
+					<td>No</td>
+					<td>No</td>
+					<td>No</td>
+					<td>Yes</td>
+				 </tr>
+				  <tr>
+					<td>Assist in creating correct PCR primer information for a join</td>
+					<td>No</td>
+					<td>No</td>
+					<td>No</td>
+					<td>No</td>
+					<td>No</td>
+					<td>*</td>
+				 </tr>
+			 </table>
+		</div>
+		<br><br>
+		<p>*Possible feature for future implementation, but not currently a primary function</p>
+		<br><h2>Solution Process:</h2><br>
+		<img src="./imgs/SolutionProcess.png">
+		<br><h2>Major Functional Component Diagram:</h2><br>
+		<img src="./imgs/initialMFCD.jpg">
+		</div>
+		
+		
+		
+	<script>
+  		var nav = responsiveNav(".nav-collapse");
+	</script>
+	
+</body>
+</html>

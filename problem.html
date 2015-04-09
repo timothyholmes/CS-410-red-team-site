@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Problem
+	</title>
+
+<link href="./style/visual.css" rel="stylesheet" type="text/css">
+<link href="./style/responsive-nav.css" rel="stylesheet" type="text/css">
+<link href="./style/tabcontent.css" rel="stylesheet" type="text/css" />
+<script src="./scripts/responsive-nav.js"></script>
+<script src="./scripts/tabcontent.js" type="text/javascript"></script>
+
+</head>
+<body id="bodyWrap">
+
+	<header>
+		<nav class="nav-collapse">
+  			<ul>
+    			<li><a href="./index.html">Home</a></li>
+    			<li><a href="./team.html">Team</a></li>
+    			<li><a href="./problem.html">Problem</a></li>
+    			<li><a href="./solution.html">Solution</a></li>
+    			<li><a href="./resources.html">Resources</a></li>
+				<li><a href="./riskmatrixtable.html">Risk Matrix</a></li>
+				<li><a href="./stories.html">User Stories</a></li>
+  			</ul>
+		</nav>
+	</header>
+	
+	<div id="headerBackgroundWrap">
+		<div id ="headerBackgroundImage">
+			<div class="centeredText">
+				<h1>Problem</h1>
+			</div>
+		</div>
+	</div>
+	
+	<div id="contentWrap">
+	
+		<h2>Problem Statement:</h2>
+		<p>Current genome viewers do not display the justifications used for joining two sequence fragments.</p>
+		
+		<br><br>
+		
+		<h2>Problem Characteristics:</h2><br>
+		<ul>
+			<li>Current viewers do not display reasons behind fragment joins</li>
+			<li>Current viewers do not allow for fragment rearrangement</li>
+			<li>Current industry standard viewers are not open source</li>
+			<li>Open sources viewers are too specialized and lack a user friendly interface</li>
+			<li>PCR primer information for a questionable join is not available with current viewers</li>
+		</ul>
+		
+		<br><br>
+		
+		<h2>Current Process:</h2><br>
+		<img src="./imgs/workflow.png"><br>
+		<img src="./imgs/workflow2.jpg"><br>
+		
+		<br>
+		
+		<p>There currently isn't a way to view the evidence CARP uses behind making each join (The circle CARP creates may not be accurate and requires further testing). Testing is expensive, so simply testing each join is out of the question. The viewer we design must be able to display the evidence used to make each joint so that Biologists can determine which joins in particular must be tested.</p>
+	
+	</div>
+	
+	<script>
+  		var nav = responsiveNav(".nav-collapse");
+	</script>
+</body>
+</html>
