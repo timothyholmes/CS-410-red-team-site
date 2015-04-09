@@ -9,6 +9,7 @@
 .nav-collapse li {
     width: 100%;
     display: block;
+    background-color: #000000;
 }
 
 .js .nav-collapse {
@@ -85,19 +86,17 @@ body {
 .nav-collapse, .nav-collapse ul {
     list-style: none;
     width: 100%;
-    float: left
+    float: left;
 }
 
 .nav-collapse li {
     float: left;
-    width: 100%
+    width: 100%;
 }
 
 @media screen and (min-width:40em) {
     .nav-collapse li {
-        width: 12.485%;
-        *width: 24.9%;
-        _width: 19%
+        width: 12.5%;
     }
 }
 
@@ -129,7 +128,7 @@ body {
 
 @media screen and (min-width:40em) {
     .nav-collapse ul ul a {
-        display: none
+        display: none;
     }
 }
 
@@ -153,7 +152,7 @@ body {
         -webkit-background-size: 100px 100px;
         -moz-background-size: 100px 100px;
         -o-background-size: 100px 100px;
-        background-size: 100px 100px
+        background-size: 100px 100px;
     }
 }
 
