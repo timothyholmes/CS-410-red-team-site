@@ -11,7 +11,6 @@
 <link href="./style/matrix.css" rel="stylesheet" type="text/css" />
 <script src="./scripts/responsive-nav.js"></script>
 <script src="./scripts/tabcontent.js" type="text/javascript"></script>
-
 </head>
 <body id="bodyWrap">
 <header>
@@ -24,104 +23,147 @@
     			<li><a href="./resources.html">Resources</a></li>
 				<li><a href="./riskmatrixtable.html">Risk Matrix</a></li>
 				<li><a href="./stories.html">User Stories</a></li>
+				<li><a href="./wbs.html">Work Breakdown</a></li>
   			</ul>
 		</nav>
-	</header>
-<style type="text/css">
-.ritz .waffle .s2{text-align:left;color:#000000;background-color:#ff0000;font-size:20pt;vertical-align:bottom;white-space:normal;overflow:hidden;direction:ltr;padding:2px 3px 2px 3px;width:21%}.ritz .waffle .s0{text-align:left;color:#000000;background-color:#ffffff;font-size:20pt;vertical-align:bottom;white-space:normal;overflow:hidden;direction:ltr;padding:2px 3px 2px 3px}.ritz .waffle .s3{text-align:left;color:#000000;background-color:#00ff00;font-size:20pt;vertical-align:bottom;white-space:normal;overflow:hidden;direction:ltr;padding:2px 3px 2px 3px;width:21%}.ritz .waffle .s1{text-align:left;color:#000000;background-color:#ffff00;font-size:20pt;vertical-align:bottom;white-space:normal;overflow:hidden;direction:ltr;padding:2px 3px 2px 3px;width:21%}
-</style>
-<body id="bodyWrap">
-<div id="contentWrap">
+</header>
 <div id="headerBackgroundWrap">
 		<div id ="headerBackgroundImage">
 			<div class="centeredText">
-				<h1>Risk Matrix</h1>
+				<h2>Risk Matrix</h2>
 			</div>
 		</div>
-	</div>
-<div class="ritz grid-container" dir="ltr">
-<table class="waffle" cellspacing="1" cellpadding="0">
-<tbody><tr style='height:20px;'>
-<td class="s0" dir="ltr">Certain</td>
-<td class="s1" dir="ltr"></td>
-<td class="s2" dir="ltr"></td>
-<td class="s2" dir="ltr"></td>
-<td class="s2" dir="ltr"></td>
-</tr><tr style='height:20px;'>
-<td class="s0" dir="ltr">Likely</td>
-<td class="s1" dir="ltr"></td>
-<td class="s1" dir="ltr">C3</td>
-<td class="s2" dir="ltr"></td>
-<td class="s2" dir="ltr"></td>
-</tr><tr style='height:20px;'>
-<td class="s0" dir="ltr">Possible</td>
-<td class="s3" dir="ltr"></td>
-<td class="s1" dir="ltr">T1</td>
-<td class="s1" dir="ltr">T3, C4</td>
-<td class="s2" dir="ltr">T2, C1, C2</td>
-</tr><tr style='height:20px;'>
-<td class="s0" dir="ltr">Unlikely</td>
-<td class="s3"></td><td class="s3">
-</td><td class="s1"></td>
-<td class="s1">S1</td></tr>
-<tr style='height:20px;'>
-<td class="s0" dir="ltr">Rare</td>
-<td class="s3"></td><td class="s3">
-</td><td class="s3"></td><td class="s1">
-</td></tr><tr style='height:20px;'>
-<td class="s0"></td>
-<td class="s0" dir="ltr">Negligible</td>
-<td class="s0" dir="ltr">Marginal</td>
-<td class="s0" dir="ltr">Major</td>
-<td class="s0" dir="ltr">Critical</td>
-</tr>
-</tbody>
-</table>
-</div>
-
 </div>
 <div id="contentWrap">
-		<h2>Technical Risks</h2>
-		<br style="line-height:10px" /> 
-		<ul>
-			<h2><li>Domain Experience T1</h2></li>
-			<ul>
-			<p><li>Due to the limited Domain experience of the team the learning curve of how to properly express a solution within the domain will be high</li></p>
-				<li>Impact 2 Probability 3</li>
-				<li>Mitigation: Agile development is being employed to allow the developers help word this</li>
+		<table class="risk-table">
+			<tr>
+                <td class='ts'>Certain</td>
+                <td class='risk warning'></td>
+                <td class='risk bad'></td>
+                <td class='risk bad'></td>
+                <td class='risk bad'></td>
+            </tr>
+            <tr>
+                <td class='ts'>Likely</td>
+                <td class='risk warning'></td>
+                <td class='risk warning'>C3</td>
+                <td class='risk bad'></td>
+                <td class='risk bad'></td>
+            </tr>
+            <tr>
+                <td class='ts'>Possible</td>
+                <td class='risk good'></td>
+                <td class='risk warning'>T1,T2</td>
+                <td class='risk warning'>C4</td>
+                <td class='risk bad'>C1,C2</td>
+            </tr>
+            <tr>
+                <td class='ts'>Unlikely</td>
+                <td class='risk good'></td>
+                <td class='risk good'></td>
+                <td class='risk warning'></td>
+                <td class='risk warning'>S1</td>
+            </tr>
+            <tr>
+                <td class='ts'>Rare</td>
+                <td class='risk good'></td>
+                <td class='risk good'></td>
+                <td class='risk good'></td>
+                <td class='risk warning'></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Negligible</td>
+                <td>Marginal</td>
+                <td>Major</td>
+                <td>Critical</td>
+            </tr>
+		</table>
+	
+	<h2>Technical Risks</h2>
+	<br style="line-height:10px" /> 
+	<ul style="padding-left: 2.5em;">
+		<li><h3>Domain Experience T1</h3></li> 
+			<ul style="padding-left: 2.5em;">
+				<li>Due to the limited domain experience of the team the learning curve of how to properly express a solution within the domain will be high</li>
+				<li>Impact 2</li>
+				<li>Probability 3</li>
+				<li>Mitigation: Agile development and working beside domain experts will allow the developers to over come this</li>
 			</ul>
-			<p>Java Compatibility T2: Java 8 has not been adopted by the majority of Java users</p>
-			<ul>
-				<li>Impact 4 Probability 3</li>
-				<li>Mitigation: None</li>
+		<li><h3>New Framework Technology, JavaFX T2</h3></li>
+			<ul style="padding-left: 2.5em;">
+				<li>
+					<p>
+						 JavaFX, Oracle's proposed replacement for SWING, is still a fairly new user interface framework<br/>
+						 With that comes the difficulty of finding resources to glean information about how to properly utilize it
+					</p>
+				</li>
+				<li>Impact 2 </li>
+				<li>Probability 3</li>
+				<li>
+					<p>
+						Mitigation: Even though the API is new the team has is comprised of members that are Oracle certified Java programmers who can guide the team in right direction and<br>
+						by utilizing FX's new API's performance the team will be able to build a view that will surpass its Swings counterparts
+					</p> 
+				</li>
 			</ul>
-			<p>New Framework Technology, JavaFX T3: JavaFX, Oracle’s proposed replacement for SWING, is still a fairly new user interface framework</p>
-			<ul>
-				<li>Impact 3 Probability 3</li>
-				<li>Mitigation:  Even though the API is newer there are numerous resources to use for reference. It also provides powerful tools that once understood will overcome all shortcomings</li>
-			</ul>
+	</ul>
+	<br style="line-height:10px" /> 
+	<h2>Customer Risks</h2>
+	<br style="line-height:10px" /> 
+	<ul style="padding-left: 2.5em;">
+		<li><h3>Acceptable Solution C1</h3></li>
+		<ul style="padding-left: 2.5em;">
+			<li>Due to the high level of user technical experience the delivered product may fall short of expectation</li>
+			<li>Impact 4</li>
+			<li>Probability 3</li>
+			<li>Mitigation: Rigours Validation and Verification from targeted customer base through mockups of the viewer and functionality through all stages of development</li>
 		</ul>
-		<br style="line-height:10px" /> 
-		<h2>Customer Risks</h2>
-		<br style="line-height:10px" /> 
-		<ul>
-			<h2><li>Acceptable Solution C1</h2></li>
-			<ul>
-			<p><li><ul>Due to the high level of user technical experience the delivered product may fall short of expectation</p></li></ul>
-			
-				<li>Impact 4 Probability 3</li>
-				<li>Mitigation: Rigours Validation and Verification from targeted customer base</li>
+		<li><h3>ODU does not find use C2</h3></li>
+		<ul style="padding-left: 2.5em;">
+			<li>Due to the high level of user technical experience the delivered product may fall short of expectation</li>
+			<li>Impact 4</li>
+			<li>Probability 3</li>
+			<li>....</li>
+		</ul>
+		<li><h3>Outside does not find use C3</h3></li>
+		<ul style="padding-left: 2.5em;">
+			<li>Due to the high level of user technical experience the delivered product may fall short of expectation</li>
+			<li>Impact 2</li>
+			<li>Probability 4</li>
+			<li>....</li>
+		</ul>
+		<li><h3>Outside does not find use C4</h3></li>
+		<ul style="padding-left: 2.5em;">
+			<li>Product is not made correctly due to there being no official requirements gathering phase</li>
+			<li>Impact 3</li>
+			<li>Probability 3</li>
+			<li>....</li>
+		</ul>
+	</ul>
+	<br style="line-height:10px" /> 	
+	<h2>Schedule Risks</h2>
+	<br style="line-height:10px" /> 
+		<ul style="padding-left: 2.5em;">
+		<li><h3>Development team unable to meet deadline S1</h3></li>
+			<ul style="padding-left: 2.5em;">
+				<li>Impact 4</li>
+				<li>Probability 2</li>
+				<li>Mitigation: The development process starts this summer and continues on throughout the fall semester</li>
 			</ul>
-		</ul>
-		<h2>Schedule Risks</h2>
-		<ul>
-		<li>S1 - Development team unable to meet deadline. <br/>Mitigation Nobody graduating before deadline. One member with extensive Java experience will have a light class load (only 411) in second half of development.</li>
-		</ul>
+	</ul>
+	
+ 
+	
+	
+	
+		
+				
+	  
 
-		</div>
+</div>
 <script>
   		var nav = responsiveNav(".nav-collapse");
-	</script>
-</body>
+</script>
 </body>
 </html>
